@@ -1,0 +1,61 @@
+.edit-creator-container {
+  max-width: 900px;
+  margin: 36px auto;
+  padding: 20px;
+  background: rgba(0,0,0,0.56);
+  border-radius: 10px;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.edit-creator-container h1 {
+  margin: 0 0 12px 0;
+  font-size: 28px;
+}
+
+.edit-creator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.edit-creator-form input[type="text"],
+.edit-creator-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 6px;
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.edit-creator-form textarea { min-height: 120px; resize: vertical; }
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.button-group .update-button,
+.button-group .delete-button,
+.button-group .cancel-button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button-group .update-button { background: #0b74de; color: #fff; }
+.button-group .update-button:hover { filter: brightness(0.95); }
+.button-group .delete-button { background: #d9534f; color: #fff; }
+.button-group .delete-button:hover { filter: brightness(0.95); }
+.button-group .cancel-button { background: transparent; border: 1px solid rgba(255,255,255,0.08); color: #fff; }
+
+@media (max-width: 560px) {
+  .edit-creator-container { margin: 18px; padding: 14px; }
+  .edit-creator-container h1 { font-size: 20px; }
+}
